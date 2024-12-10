@@ -1,0 +1,29 @@
+
+$space-size-base: 24px;
+
+:host {
+
+  ul {
+    list-style: none;
+  }
+
+  .content {
+    padding:    $space-size-base;
+    text-align: center;
+  }
+
+  .body__list {
+    margin-top:            $space-size-base;
+    padding:               $space-size-base;
+    display:               grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:                   16px;
+
+    &.timetable {
+      .list__item {
+        background-color: #eeeeee;
+        border-radius:    8px;
+      }
+    }
+  }
+}
